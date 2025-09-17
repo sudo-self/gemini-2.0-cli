@@ -25,8 +25,10 @@ npm install -g gemini-2.0-cli
 
 ```
 npx gemini-cli
-
 ```
+
+<img width="1158" height="637" alt="Screenshot 2025-09-17 at 05 28 40" src="https://github.com/user-attachments/assets/32524649-2f18-4ac3-84d4-6215a517193a" />
+
 
 
 
