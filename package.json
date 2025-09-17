@@ -1,6 +1,6 @@
 {
   "name": "@sudo-self/gemini-2.0-cli",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Command-line Gemini AI chatbot powered by Gemini 2.0 Flash",
   "type": "module",
   "main": "gemini-cli.js",
@@ -32,6 +32,7 @@
     "registry": "https://npm.pkg.github.com/"
   }
 }
+
 
 
 
