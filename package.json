@@ -1,0 +1,25 @@
+{
+  "name": "gemini-2.0-cli",
+  "version": "1.0.0",
+  "description": "Command-line Gemini AI chatbot powered by Gemini 2.0 Flash",
+  "type": "module",
+  "main": "gemini-cli.js",
+  "bin": {
+    "gemini-cli": "./gemini-cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gemini",
+    "ai",
+    "chatbot",
+    "cli",
+    "command-line"
+  ],
+  "author": "sudo-self",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.6.1"
+  }
+}
