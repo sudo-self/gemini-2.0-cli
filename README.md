@@ -1,5 +1,5 @@
 # Gemini CLI Chatbot
-
+[![Publish Gemini CLI to GitHub Packages](https://github.com/sudo-self/gemini-2.0-cli/actions/workflows/npm-publish-github-packages.yml/badge.svg)](https://github.com/sudo-self/gemini-2.0-cli/actions/workflows/npm-publish-github-packages.yml)
 ![npm](https://img.shields.io/npm/v/gemini-2.0-cli)
 ![License](https://img.shields.io/npm/l/gemini-2.0-cli)
 
