@@ -8,7 +8,8 @@
     "gemini-cli": "./gemini-cli.js"
   },
   "scripts": {
-    "test": "echo \"No tests yet\""
+    "start": "node gemini-cli.js",
+    "test": "echo \"No tests defined\" && exit 0"
   },
   "keywords": [
     "gemini",
@@ -20,7 +21,8 @@
   "author": "sudo-self",
   "license": "MIT",
   "dependencies": {
-    "dotenv": "^16.6.1"
+    "dotenv": "^16.6.1",
+    "node-fetch": "^3.4.1"
   },
   "repository": {
     "type": "git",
@@ -30,5 +32,6 @@
     "registry": "https://npm.pkg.github.com/"
   }
 }
+
 
 
