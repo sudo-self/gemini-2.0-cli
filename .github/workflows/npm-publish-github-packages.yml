@@ -12,28 +12,24 @@ jobs:
       packages: write
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
           registry-url: https://npm.pkg.github.com/
-
-      - name: Configure npm for GitHub Packages
-        run: echo "@sudo-self:registry=https://npm.pkg.github.com/" > .npmrc
 
       - name: Install dependencies
         run: npm ci
 
       - name: Run tests
-        run: npm test || echo "Skipping tests (none defined)"
+        run: npm test
 
-      - name: Publish package
+      - name: Publish to GitHub Packages
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 
 
 
