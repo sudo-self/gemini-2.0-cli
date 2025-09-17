@@ -1,39 +1,22 @@
-name: Node.js Package
+name: Publish Gemini CLI to GitHub Packages
 
-# Trigger workflow when a GitHub release is created
+# Trigger on release creation
 on:
   release:
-    types: [created]
+    types: [published]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      # Checkout the repo
-      - uses: actions/checkout@v4
-
-      # Setup Node.js environment
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      # Install dependencies
-      - run: npm ci
-
-      # Run tests
-      - run: npm test
-
-  publish-gpr:
-    needs: build
+  publish:
     runs-on: ubuntu-latest
     permissions:
       contents: read
       packages: write
+
     steps:
-      # Checkout the repo again
+      # Checkout your repository
       - uses: actions/checkout@v4
 
-      # Setup Node.js and GitHub Packages registry
+      # Setup Node.js
       - uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -46,4 +29,5 @@ jobs:
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 
